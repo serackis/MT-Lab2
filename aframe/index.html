@@ -21,15 +21,6 @@
     <a-gui-flex-container flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1"
       opacity="0.7" width="7" height="6" position="-6 2.5 -2" rotation="0 45 0">
 
-    </a-gui-flex-container>
-    <!-- Camera + cursor. -->
-    <a-entity id="cameraRig" position="-3 2 3">
-    <a-camera look-controls wasd-controls position="0 0 0">
-    <a-gui-cursor id="cursor" raycaster="objects: [gui-interactable]" fuse="true" fuse-timeout="2000" design="dot">
-    </a-gui-cursor> <!-- /cursor -->
-    </a-camera> <!-- /camera -->
-    </a-entity>
-	  
     <a-gui-circle-timer
         height="0.75"
 	count-down="10"
@@ -55,6 +46,15 @@
     >
     </a-gui-input>
 
+    </a-gui-flex-container>
+    <!-- Camera + cursor. -->
+    <a-entity id="cameraRig" position="-3 2 3">
+    <a-camera look-controls wasd-controls position="0 0 0">
+    <a-gui-cursor id="cursor" raycaster="objects: [gui-interactable]" fuse="true" fuse-timeout="2000" design="dot">
+    </a-gui-cursor> <!-- /cursor -->
+    </a-camera> <!-- /camera -->
+    </a-entity>
+	  
     </a-scene>
   </body>
 </html>
