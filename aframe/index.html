@@ -17,29 +17,6 @@
     <a-pointcloud scale="0.1 0.1 0.1" position="0 0.08 -2.5" rotation="-90 45 0" src="url(sculpt.ply)" size="0.05">
     </a-pointcloud>
 
-    <a-gui-flex-container flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1"
-      opacity="0.7" width="7" height="6" position="-6 2.5 -2" rotation="0 45 0">
-      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
-      <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
-      <a-entity laser-controls line="color: red; opacity: 0.75"></a-entity>
-      <a-pointcloud 
-        scale="0.1 0.1 0.1" 
-        position="0 0.08 -2.5" 
-        rotation="-90 45 0" 
-        src="url(sculpt.ply)" 
-        size="0.01">
-      </a-pointcloud>
-      <a-pointcloud 
-        scale="0.5 0.5 0.5" 
-        position="1.5 2 0.5" 
-        src="url(Sphere.ply)" 
-        size="0.05"
-        texture="url(VGTU-logo.png)"
-        depthWrite="false">
-      </a-pointcloud>
-
     </a-scene>
   </body>
 </html>
