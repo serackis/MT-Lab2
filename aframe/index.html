@@ -7,6 +7,18 @@
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="js/aframe-pointcloud-component.js"></script>
     <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script
+	    
+    <script>
+    	function rotate() {
+     		var params = document.getElementsByTagName("a-pointcloud")[0].getAttribute("rotation");
+      		var xRot = Number(params.x);
+      		var yRot = Number(params.y) + 45;
+      		var zRot = Number(params.z);
+      		var rotation = xRot+" "+yRot+" "+zRot;
+      		document.getElementsByTagName("a-pointcloud")[0].setAttribute("rotation", rotation);
+    	}
+    </script>
+	
   </head>
   <body>
     <a-scene>
